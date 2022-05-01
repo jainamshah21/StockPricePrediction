@@ -48,16 +48,15 @@ with st.container():
         st.write("##")
         st.write(
             """
-            On my YouTube channel I am creating tutorials for people who:
-            - are looking for a way to leverage the power of Python in their day-to-day work.
-            - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
-            - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-            - are working with Excel and found themselves thinking - "there has to be a better way."
+            Stock price prediction using python and LSTM :
+            - i analyze the data and Filter usefull data.
+            - Then make the LSTM model for prediction of Stock.
+            - Create the graph for visualization  of data.
+            
 
-            If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+            Warning : This is not the actual data for real life stock prediction , this is use only for Study perpose.
             """
         )
-        st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
         
@@ -108,11 +107,12 @@ with st.container():
         st.image(img_PredictedGraph)
     with text_column:
         st.subheader("This is our Predited graph(Latest Time) for Microsoft dataset")
-        #st.write(
-         #   """
-          #  we use this code for train the data using LSDM and make decition maker model
-           # """
-        #)  
+         st.write(
+            """
+            we can see that next 20 days prediction graph.
+            in this we predicted the price of the stock will go down in 20th day.
+            """
+         )  
         
 with st.container():
     image_column, text_column = st.columns((1, 2))
